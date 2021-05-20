@@ -21,7 +21,7 @@
     <script defer src="js/scripts.js"></script>
   </head>
   <body>
-    <section class="hero main_hero is-fullheight is-success is-light">
+    <section class="hero main_hero is-medium is-light">
       <div class="hero-head">
         <div class="first_nav">
           <div class="container">
@@ -29,10 +29,10 @@
               <div class="navbar-brand">
                 <a class="navbar-item" href="#">
 
-                  <span class="is-success">Ufulu Gardens</span> 
+                  Ufulu Gardens 
                   <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma Hotel" width="112" height="28" /> -->
                 </a>
-                <a class="navbar-item is-hidden-desktop" href="tel:+302109849583">
+                <!-- <a class="navbar-item is-hidden-desktop" href="tel:+302109849583">
                   <span class="icon" style="color: #333;">
                     <i class="fa fa-lg fa-phone-alt"></i>
                   </span>
@@ -46,7 +46,7 @@
                   <span class="icon">
                     <i class="fab fa-lg fa-facebook-f"></i>
                   </span>
-                </a>
+                </a> -->
                 <!-- Mobile Menu -->
                 <div class="navbar-burger burger" data-target="navMenuBlogHero">
                   <span></span>
@@ -97,8 +97,10 @@
         <div class="container has-text-centered">
           <div class="slider-content animated zoomIn pb-6">
             <div>
-              <p class="title is-1 main-text">Welcome to Ufulu gardens</p>
-              <p class="subtitle is-4 main-text">Experience The Luxury</p>
+              <div class="block">
+                <a class="button is-medium" id="open-modal">Book now</a>
+              </div>
+              
             </div>
           </div>
           <span class="scroll-down animated zoomIn">
@@ -130,71 +132,13 @@
     </section>
     <!-- Rooms Section -->
     <section class="hero" id="rooms">
-      <div class="hero-body">
-        <div class="container">
-          <div class="rooms columns">
-            <!-- Executive Gold Single -->
-            <div class="column">
-              <figure class="image">
-                <img
-                  src="https://images.unsplash.com/photo-1515510621228-30de609bbd60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  alt="Executive Gold Single"
-                />
-              </figure>
-              <div class="content">
-                <div></div>
-                <h1 class="title is-6">Suites</h1>
-                <p>The Executive Gold Single Rooms can hold <b>2 guests</b> (with extra bed €50).</p>
-                <a class="button is-primary open-modal" href="#">View Details €119/day</a>
-              </div>
-            </div>
-            <!-- Executive Gold Double -->
-            <div class="column">
-              <figure class="image">
-                <img
-                  src="https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  alt="Executive Gold Double"
-                />
-              </figure>
-              <div class="content">
-                <div></div>
-                <h1 class="title is-6">Corporate apartments</h1>
-                <p>The Executive Gold Double Rooms can hold <b>3 guests</b> (with extra bed €50).</p>
-                <a class="button is-primary open-modal" href="#">View Details €239/day</a>
-              </div>
-            </div>
-            <!-- Premier Diamond Single -->
-            <!-- <div class="column">
-              <figure class="image">
-                <img
-                  src="https://images.unsplash.com/photo-1590490360836-2e3b067c082b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  alt="Premier Diamond Single"
-                />
-              </figure>
-              <div class="content">
-                <div></div>
-                <h1 class="title is-6">Premier Diamond Single</h1>
-                <p>The Premier Diamond Single rooms can hold <b>2 guests</b> (with extra bed €50).</p>
-                <a class="button is-primary open-modal" href="#">View Details €399/day</a>
-              </div>
-            </div>
-            <div class="column">
-              <figure class="image">
-                <img
-                  src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  alt="Premier Diamond Double"
-                />
-              </figure>
-              <div class="content">
-                <div></div>
-                <h1 class="title is-6">Premier Diamond Double</h1>
-                <p>he Premier Diamond Double rooms can hold <b>3 guests</b> (with extra bed €50).</p>
-                <a class="button is-primary open-modal" href="#">View Details €499/day</a>
-              </div>
-            </div> -->
-          </div>
+      <!-- <div class="hero-body">
+        <div class="block">
+
+            <h4 class="title is-4">ROOMS</h4>
         </div>
-      </div>
+        
+        </div> -->
     </section>
     <!-- ./Rooms Section -->
     <!-- Features Modal -->
@@ -202,22 +146,95 @@
       <div class="modal-background"></div>
       <div class="modal-content">
         <div class="content">
-          <div class="columns">
+          <div class="field">
+              <label class="label">E-Mail</label>
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+              <label class="label">Name</label>
+            <p class="control has-icons-left">
+              <input class="input" type="text" placeholder="Name">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </p>
+          </div>
+            <div class="field">
+            <p class="control">
+              <label class="label">Check in date</label>
+              <input class="input" type="date" placeholder="check in">
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <label class="label">Check out date</label>
+              <input class="input" type="date" placeholder="check in">
+            </p>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+              <label class="label">Number of guests</label>
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="number" placeholder="Guests">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+               <div class="field">
+              <label class="label">Number of children</label>
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="number" placeholder="Children">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>              
+              <div class="field">
+              <label class="label">Number of rooms</label>
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="number" placeholder="Rooms">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>             
+            </div>
+          </div>
+          <div class="field is-grouped is-grouped-centered">
+            <p class="control">
+              <button class="button is-success is-centered">
+                Book
+              </button>
+            </p>
+          </div>
+          <!-- <div class="columns">
             <div class="column">
               <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma Hotels" width="150" />
             </div>
             <div class="column">
               <div>
-                <i class="fa fa-phone"></i> &nbsp; <span>Phone Number</span> &nbsp;
-                <a style="color: black;" href="tel:+30 2109999999">+30 2109999999</a>
+                <i class="fa fa-phone"></i> &nbsp; <span>Phone Numbers (tap to call)</span> &nbsp;
+                <a style="color: black;" href="tel:+30 2109999999"></a>
+                Tel: (+265) 1 794 060, (+265) 1 794 079
+Cell: (+265) 888 994 060, (+265) 996 945 277
               </div>
               <div>
                 <i class="fa fa-phone"></i> &nbsp; <span>Reservation</span> &nbsp;
                 <a style="color: black;" href="tel:+30 2109999997">+30 210999997</a>
               </div>
             </div>
-          </div>
-          <h3>Facilities &amp; Features</h3>
+          </div> -->
+          <!-- <h3>Facilities &amp; Features</h3>
           <div class="columns">
             <ul class="column">
               <li>Free Wi-Fi Connectivity</li>
@@ -235,7 +252,7 @@
               <li>Coffee / Tea Maker in Room</li>
               <li>Mini Bar</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
       <button class="modal-close is-large" aria-label="close"></button>
@@ -246,7 +263,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="content">
-            <h4 class="main_title title is-4">Explore Ufulu Gardens</h4>
+            <h4 class="main_title title is-4">ABOUT</h4>
           </div>
           <div class="columns content">
             <div class="column">
@@ -261,66 +278,9 @@ Whether for accommodation, conferences, weddings or other functions, Ufulu Garde
                 <p>
 Make a booking today!.
               </p>
-              <div class="reception">
-                <h5 class="main_title title is-5">Reception</h5>
-                <div class="reception-item">
-                  <div>
-                    <div>
-                      <i class="fa fa-phone"></i>
-                      <span>Phone Number</span>
-                    </div>
-                    <a href="tel:+302109999999">+30 210 9999999</a>
-                  </div>
-                  <a href="tel:+302109999999" class="button mobile-only">
-                    <span>Call</span>
-                  </a>
-                </div>
-                <div class="reception-item">
-                  <div>
-                    <div>
-                      <i class="fa fa-phone"></i>
-                      <span>Reservation</span>
-                    </div>
-                    <a href="tel:+302109999997">+30 2109999997</a>
-                  </div>
-                  <a href="tel:+302109999997" class="button mobile-only">
-                    <span>Call</span>
-                  </a>
-                </div>
-                <div class="reception-item">
-                  <div>
-                    <div>
-                      <i class="fa fa-envelope"></i>
-                      <span>Email</span>
-                    </div>
-                    <a href="mailto:reservations@bulmahotels.com">reservations@bulmahotels.com</a>
-                  </div>
-                  <a href="mailto:reservations@bulmahotels.com" class="button mobile-only">
-                    <span>Mail</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Reception Image -->
-            <div class="column reception-image">
-              <img
-                src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
-                alt="Bulma Hotels"
-              />
+              
             </div>
           </div>
-          <!-- <div class="content">
-            <h5 class="main_title title is-5">Location</h5>
-            <p>
-              Bulma Hotel is a business hotel with 45 air conditioned luxury rooms. The hotel is conveniently located in
-              close proximity to Athens, Greece.
-            </p>
-            <ul>
-              <li>3 kms from Kifisia bus station and railway station.</li>
-              <li>25 kms from Athens International Airport.</li>
-              <li>Less than 2 km from nearest shopping malls (The Mall Athens, &amp; Icon Mall).</li>
-            </ul>
-          </div> -->
         </div>
       </div>
     </section>
@@ -442,9 +402,38 @@ Make a booking today!.
             <div class="content">
               <h4 class="title is-4">Contact Us</h4>
             </div>
-            <h6 class="subtitle is-6">If you've any queries feel free to contact us</h6>
-            <div class="columns box">
-              <form class="column" action="#">
+<div class="reception">
+                <!-- <h5 class="main_title title is-5">Reception</h5> -->
+                <div class="reception-item">
+                  <div>
+                    <div class="block">
+                      <i class="fa fa-phone"></i>
+                      <span>Phone Numbers (tap to call)</span>
+                    </div>
+                    <div class="block"><a href="tel:+2651794060">Tel: (+265) 1 794 060</a></div>
+                    <div class="block"><a href="tel:+2651794079">Tel: (+265) 1 794 079</a></div>
+                    <div class="block"><a href="tel:+265888994060">Tel: (+265) 888 994 060</a></div>
+                    <div class="block"><a href="tel:+265996945277">Tel: (+265) 996 945 277</a></div>
+                  </div>
+                  
+                </div>
+                <div class="reception-item">
+                  <div>
+                    <div>
+                      <i class="fa fa-envelope"></i>
+                      <span>Email</span>
+                    </div>
+                    <a href="mailto:reservations@ufulugardens.mw">reservations@ufulugardens.mw</a>
+                  </div>
+                  <a href="mailto:reservations@ufulugardens.mw" class="button mobile-only">
+                    <span>Mail</span>
+                  </a>
+                </div>
+              </div>
+            <!-- <h6 class="subtitle is-6">If you've any queries feel free to contact us</h6> -->
+            <div class="block"></div>
+            <div class="columns">
+              <!-- <form class="column" action="#">
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control">
@@ -480,14 +469,14 @@ Make a booking today!.
                     <input class="button is-primary" type="submit" />
                   </div>
                 </div>
-              </form>
-              <div class="column">
+              </form> -->
+              <div class="column is-three-fifths is-offset-one-fifth">
                 <iframe
                   width="100%"
                   height="100%"
                   frameborder="0"
                   style="border: 0;"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.604001548294!2d23.703320025394262!3d37.99083200838609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2zzpHOuM6uzr3OsQ!5e0!3m2!1sel!2sgr!4v1593689527371!5m2!1sel!2sgr"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.2091558986895!2d33.795611293960086!3d-13.927419304152677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9df0e879008ed161!2sUfulu%20Gardens%20Hotel%20And%20Conference%20Center!5e0!3m2!1sen!2smw!4v1621535960785!5m2!1sen!2smw"
                   allowfullscreen
                 ></iframe>
               </div>
@@ -520,7 +509,7 @@ Make a booking today!.
               <div class="content">
                 <div>
                   <h6 class="footer_title title is-6">SOCIAL MEDIA</h6>
-                  <p>Follow the Bulma Hotels on social media</p>
+                  <p>Follow us on social media</p>
                   <a class="button is-medium is-facebook">
                     <span class="icon">
                       <i class="fab fa-facebook-f fa-lg"></i>
@@ -544,27 +533,14 @@ Make a booking today!.
                 </div>
               </div>
             </div>
-            <div class="column is-4">
-              <div class="content">
-                <h6 class="footer_title title is-6">ADDRESS</h6>
-                <p class="is-marginless">Reach the destinaiton safely</p>
-                <p class="is-marginless">Street 21 - Kifisia - 99999 - Athens Greece</p>
-                <div>
-                  <i class="fa fa-phone"></i> &nbsp; <span>Phone Number</span> &nbsp;
-                  <a href="tel:+302109999999">+210 9999999</a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
       <div class="hero-foot">
         <div class="container has-text-centered">
           <p class="footer-text">
-            &copy; <span id="year"></span>  Ufulu Gardens All rights reserved. <br />
-            <a href="https://www.aldiduzha.com?utm_source=Github" style="color: white;"
-              >Designed with <i class="fa fa-heart fa-fw" style="font-size: 10px; color: red;"></i> by Aldi Duzha</a
-            >
+            &copy; <span id="year"></span>  Ufulu Gardens  All rights reserved. <br />
           </p>
         </div>
       </div>
