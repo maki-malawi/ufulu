@@ -1,0 +1,30 @@
+{
+  "name": "ufulu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "nodemailer": "^6.6.1"
+  },
+  "description": "Part of [Awesome Bulma Templates](https://github.com/aldi/awesome-bulma-templates) repo",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maki-malawi/ufulu.git"
+  },
+  "keywords": [
+    "ufulu"
+  ],
+  "author": "maki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maki-malawi/ufulu/issues"
+  },
+  "homepage": "https://github.com/maki-malawi/ufulu#readme"
+}
