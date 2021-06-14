@@ -35,6 +35,8 @@ a.button {
   font-size: 14px;
 }
 .main_title {
+  text-decoration: underline;
+  text-decoration-color: green;
   color: #fff;
 }
 .columns {
