@@ -133,10 +133,11 @@
     <div class="modal-background"></div>
     <div class="modal-content">
       <div class="content">
+        <form action="/book" method="post">
         <div class="field">
           <label class="label">E-Mail</label>
           <p class="control has-icons-left has-icons-right">
-            <input class="input" type="email" placeholder="Email">
+            <input class="input" type="email" placeholder="Email" required name="email">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -148,7 +149,7 @@
         <div class="field">
           <label class="label">Name</label>
           <p class="control has-icons-left">
-            <input class="input" type="text" placeholder="Name">
+            <input class="input" type="text" placeholder="Name" required name="clientName">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -157,13 +158,13 @@
         <div class="field">
           <p class="control">
             <label class="label">Check in date</label>
-            <input class="input" type="date" placeholder="check in">
+            <input class="input" type="date" placeholder="check in" required name="checkin">
           </p>
         </div>
         <div class="field">
           <p class="control">
             <label class="label">Check out date</label>
-            <input class="input" type="date" placeholder="check in">
+            <input class="input" type="date" placeholder="check in" required name="checkout">
           </p>
         </div>
         <div class="field is-horizontal">
@@ -171,7 +172,7 @@
             <div class="field">
               <label class="label">Number of guests</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="number" placeholder="Guests">
+                <input class="input" type="number" placeholder="Guests" required name="guests">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -180,7 +181,7 @@
             <div class="field">
               <label class="label">Number of children</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="number" placeholder="Children">
+                <input class="input" type="number" placeholder="Children" name="children">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -189,7 +190,7 @@
             <div class="field">
               <label class="label">Number of rooms</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="number" placeholder="Rooms">
+                <input class="input" type="number" placeholder="Rooms" name="rooms" required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -199,7 +200,7 @@
         </div>
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
-            <button class="button is-success is-centered">
+            <button class="button is-success is-centered" type="submit">
               Book
             </button>
           </p>
@@ -242,6 +243,7 @@ Cell: (+265) 888 994 060, (+265) 996 945 277
           </div> -->
       </div>
     </div>
+</form>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
   <!-- ./Features Modal -->
@@ -631,7 +633,7 @@ Cell: (+265) 888 994 060, (+265) 996 945 277
 
             <div class="column ">
               <div class="box">
-                <form class="" action="#">
+                <form class="" action="/book" method="POST">
                   <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
