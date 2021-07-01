@@ -16,10 +16,14 @@ app.get('/', function(req, res, next) {
 });
 app.post('/book', function(req, res, next) {
   console.log(req.body);
-  main()
-  .then((data) => {
-    console.log(data);
-  })
+    res.sendFile(path.join(__dirname+'/order_confirmation.html'));
+  // main()
+  // .then((data) => {
+  //   console.log(data);
+  //   res.sendFile(path.join(__dirname+'/order_confirmation.html'));
+  // })
+  // .catch(console.error);
+
   // res.sendFile(path.join(__dirname+'/index.html'));
 });
 
@@ -66,5 +70,3 @@ async function main() {
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   return {status: "done", message: info.messageId};
 }
-
-main().catch(console.error);
